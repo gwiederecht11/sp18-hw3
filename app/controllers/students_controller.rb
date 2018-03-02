@@ -1,13 +1,10 @@
-class TeachersController < ApplicationController
-  def new
-    @placeholder_course = '186'
-  end
+class StudentsController < ApplicationController
 
   def create
     # Hint: params??
-    @full_name = params[:full_name]
-    @course = params[:course_name]
-    @grade_level = params[:grade_level]
+    @your_name = params[:your_name]
+    @sport = params[:sport]
+    @year = params[:year]
 
 
     # YOUR CODE HERE
@@ -19,6 +16,6 @@ class TeachersController < ApplicationController
     # 'views/teachers/create.html.erb' view file which we do not have.
     # By convention, create is associated with a POST/PUT method while show is associated with the GET HTTP method
     # so the result after a "create" (C in CRUD) is a show.
-    render 'show'
+
   end
 end
